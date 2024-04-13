@@ -1,0 +1,15 @@
+{
+    "name": "proya/laravel-middleware",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Proya\\LaravelMiddleware\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "proya"
+        }
+    ],
+    "require": {}
+}

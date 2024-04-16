@@ -2,6 +2,7 @@
     "name": "proya/laravel-middleware",
     "type": "library",
     "homepage": "https://github.com/KihiraKota/laravel-middleware",
+    "license": "MIT",
     "authors": [
         {
             "name": "Kihira Kota"

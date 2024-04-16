@@ -1,18 +1,19 @@
 {
     "name": "proya/laravel-middleware",
     "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Proya\\Laravel\\": "src/"
-        }
-    },
+    "homepage": "https://github.com/KihiraKota/laravel-middleware",
     "authors": [
         {
-            "name": "proya"
+            "name": "Kihira Kota"
         }
     ],
     "require": {
         "illuminate/support": "^9",
         "illuminate/http": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Proya\\Laravel\\": "src/"
+        }
     }
 }

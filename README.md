@@ -1,3 +1,7 @@
 # Laravel Middleware
 
-todo
+## インストール方法
+
+```sh
+composer require proya/laravel-middleware
+```

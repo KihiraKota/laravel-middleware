@@ -13,9 +13,18 @@
         "illuminate/support": "^9",
         "illuminate/http": "^9"
     },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "phpunit/phpunit": "^10.5"
+    },
     "autoload": {
         "psr-4": {
             "Proya\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     }
 }

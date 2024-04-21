@@ -1,8 +1,14 @@
 version: "3"
 
 services:
-  php:
-    build: ./php
+  php7.4:
+    build: ./php7.4
+    volumes:
+      - ..:/app
+    working_dir: /app
+    tty: true
+  php8.1:
+    build: ./php8.1
     volumes:
       - ..:/app
     working_dir: /app

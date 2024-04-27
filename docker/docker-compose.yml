@@ -7,8 +7,26 @@ services:
       - ..:/app
     working_dir: /app
     tty: true
+  php8.0:
+    build: ./php8.0
+    volumes:
+      - ..:/app
+    working_dir: /app
+    tty: true
   php8.1:
     build: ./php8.1
+    volumes:
+      - ..:/app
+    working_dir: /app
+    tty: true
+  php8.2:
+    build: ./php8.2
+    volumes:
+      - ..:/app
+    working_dir: /app
+    tty: true
+  php8.3:
+    build: ./php8.3
     volumes:
       - ..:/app
     working_dir: /app

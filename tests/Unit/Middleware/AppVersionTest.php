@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit\Middleware;
+namespace Proya\LaravelMiddlewareTests\Unit\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;

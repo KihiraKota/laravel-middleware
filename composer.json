@@ -9,13 +9,13 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ^8.1",
+        "php": "^7.4 || ^8.0",
         "illuminate/support": "^6 || ^9",
         "illuminate/http": "^6 || ^9"
     },
     "require-dev": {
         "mockery/mockery": "^1",
-        "phpunit/phpunit": "^9 || ^10"
+        "phpunit/phpunit": "^8 || ^9 || ^10"
     },
     "autoload": {
         "psr-4": {

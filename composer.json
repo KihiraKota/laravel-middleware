@@ -10,12 +10,12 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "illuminate/support": "^6 || ^9",
-        "illuminate/http": "^6 || ^9"
+        "illuminate/support": "^6 || ^7 || ^8 || ^9 || ^10 || ^11",
+        "illuminate/http": "^6 || ^7 || ^8 || ^9 || ^10 || ^11"
     },
     "require-dev": {
         "mockery/mockery": "^1",
-        "phpunit/phpunit": "^8 || ^9 || ^10"
+        "phpunit/phpunit": "^8 || ^9 || ^10 || ^11"
     },
     "autoload": {
         "psr-4": {

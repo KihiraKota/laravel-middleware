@@ -5,15 +5,123 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-with-php-7-4:
+  test-with-laravel-6:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup PHP
+      - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
+      - name: Check PHP version
+        run: php -v
+      - name: Set Laravel version
+        run: composer require --no-install illuminate/http:"^6" illuminate/support:"^6"
+      - name: Composer install
+        run: composer install
+      - name: Run test
+        run: php vendor/bin/phpunit
+
+  test-with-laravel-7:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      - name: Check PHP version
+        run: php -v
+      - name: Set Laravel version
+        run: composer require --no-install illuminate/http:"^7" illuminate/support:"^7"
+      - name: Composer install
+        run: composer install
+      - name: Run test
+        run: php vendor/bin/phpunit
+
+  test-with-laravel-8:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      - name: Check PHP version
+        run: php -v
+      - name: Set Laravel version
+        run: composer require --no-install illuminate/http:"^8" illuminate/support:"^8"
+      - name: Composer install
+        run: composer install
+      - name: Run test
+        run: php vendor/bin/phpunit
+
+  test-with-laravel-9:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+      - name: Check PHP version
+        run: php -v
+      - name: Set Laravel version
+        run: composer require --no-install illuminate/http:"^9" illuminate/support:"^9"
+      - name: Composer install
+        run: composer install
+      - name: Run test
+        run: php vendor/bin/phpunit
+
+  test-with-laravel-10:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+      - name: Check PHP version
+        run: php -v
+      - name: Set Laravel version
+        run: composer require --no-install illuminate/http:"^10" illuminate/support:"^10"
+      - name: Composer install
+        run: composer install
+      - name: Run test
+        run: php vendor/bin/phpunit
+
+  test-with-laravel-11:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+      - name: Check PHP version
+        run: php -v
+      - name: Set Laravel version
+        run: composer require --no-install illuminate/http:"^11" illuminate/support:"^11"
+      - name: Composer install
+        run: composer install
+      - name: Run test
+        run: php vendor/bin/phpunit
+
+  test-with-php-8-3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
       - name: Check PHP version
         run: php -v
       - name: Composer install

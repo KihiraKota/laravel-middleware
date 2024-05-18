@@ -1,22 +1,22 @@
-name: learn-github-actions
+name: test
 
 on:
   push:
   workflow_dispatch:
 
 jobs:
-  check-bats-version:
+  test-with-php-7.4:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is pen"
       - name: Checkout
         uses: actions/checkout@v4
-      - run: |
-          ls -al
-          cd .github/workflows/
-          ls -al
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
-      - run: php -v
+      - name: Check PHP version
+        run: php -v
+      - name: Composer install
+        run: composer install
+      - name: Run test
+        run: php vendor/bin/phpunit

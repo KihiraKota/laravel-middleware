@@ -9,8 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is pen"
-      - uses: actions/checkout@v4
+      - name
+        uses: actions/checkout@v4
       - run: |
           ls -al
           cd .github/workflows/
           ls -al
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      - run: php -v

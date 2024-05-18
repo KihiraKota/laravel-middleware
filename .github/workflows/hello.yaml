@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is pen"
-      - name
+      - name: Checkout
         uses: actions/checkout@v4
       - run: |
           ls -al

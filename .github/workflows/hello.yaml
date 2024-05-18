@@ -6,7 +6,7 @@ jobs:
     steps:
       - run: echo "this is pen"
       - uses: actions/checkout@4
-      -run:
-            ls -al
-            cd .github/workflows/
-            ls -al
+      - run:
+          ls -al
+          cd .github/workflows/
+          ls -al

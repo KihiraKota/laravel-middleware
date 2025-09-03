@@ -113,6 +113,24 @@ jobs:
       - name: Run test
         run: php vendor/bin/phpunit
 
+test-with-laravel-12:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+      - name: Check PHP version
+        run: php -v
+      - name: Set Laravel version
+        run: composer require --no-install illuminate/http:"^12" illuminate/support:"^12"
+      - name: Composer install
+        run: composer install
+      - name: Run test
+        run: php vendor/bin/phpunit
+
   test-with-php-8-3:
     runs-on: ubuntu-latest
     steps:
@@ -122,6 +140,22 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
+      - name: Check PHP version
+        run: php -v
+      - name: Composer install
+        run: composer install
+      - name: Run test
+        run: php vendor/bin/phpunit
+
+test-with-php-8-4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
       - name: Check PHP version
         run: php -v
       - name: Composer install

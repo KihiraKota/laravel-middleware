@@ -113,7 +113,7 @@ jobs:
       - name: Run test
         run: php vendor/bin/phpunit
 
-test-with-laravel-12:
+  test-with-laravel-12:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -131,7 +131,7 @@ test-with-laravel-12:
       - name: Run test
         run: php vendor/bin/phpunit
 
-test-with-php-8-3:
+  test-with-php-8-3:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -147,7 +147,7 @@ test-with-php-8-3:
       - name: Run test
         run: php vendor/bin/phpunit
 
-test-with-php-8-4:
+  test-with-php-8-4:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

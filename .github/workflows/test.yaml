@@ -131,7 +131,7 @@ test-with-laravel-12:
       - name: Run test
         run: php vendor/bin/phpunit
 
-  test-with-php-8-3:
+test-with-php-8-3:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

@@ -31,3 +31,9 @@ services:
       - ..:/app
     working_dir: /app
     tty: true
+  php8.4:
+    build: ./php8.4
+    volumes:
+      - ..:/app
+    working_dir: /app
+    tty: true
